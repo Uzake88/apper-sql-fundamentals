@@ -1,7 +1,0 @@
-Review 1
-
-1. SELECT city, population FROM north_american_cities where country like "Canada";
-2. SELECT city FROM north_american_cities where country like "United States" order by latitude desc;
-3. SELECT * FROM north_american_cities where longitude < -87.629798 order by longitude asc;
-4. SELECT * FROM north_american_cities where country like "Mexico" order by population desc limit 2;
-5. SELECT city, population FROM north_american_cities where country like "United States" order by population desc limit 2 offset 2;
