@@ -1,0 +1,33 @@
+SQL PD Submission (Sy,Justin Gabriel)
+
+1. "A mailing list of an illegal online service was sent to the SQLPD hot-line. Please submit all entries' details."
+Answer: SELECT * FROM MAILING_LIST;
+
+2. "A mailing list of an illegal online service was sent to the SQLPD hot-line. Please submit all records join dates and last names' details."
+Answer: SELECT JoinDate, LastName FROM mailing_list;
+
+3. "A mailing list of an illega online service was sent to the SQLPD hot-line. Please submit all entries surnames and first names' details."
+Answer: SELECT Surname, FirstName FROM mailing_list;
+
+4. "White hat hacker has sent SQLPD exposed members' details of a shady site connected to various persons of interest. Please submit all members number of comments' details. Please make sure there are no duplicates."
+Answer: SELECT DISTINCT Comments FROM members;
+
+5. "A mailing list of an illegal online service was sent to the SQLPD hot-line. Please submit all entries' details sorted by number of password changes in ascending order."
+Answer: SELECT * FROM mailing_list ORDER BY PassChangeCount ASC;
+
+6. "A mailing list of an illegal online service was sent to the SQLPD hot-line. Please submit all records' details sorted by family names in descending order."
+Answer: SELECT * FROM mailing_list ORDER BY FamilyName DESC;
+
+7. "An illegal site's servers were seized in a recent operation. Please submit all users number of downloads and first names' details sorted by first names in descending order. Please make sure there are no duplicates."
+Answer: SELECT DISTINCT NumberOfDownloads, FirstName FROM users ORDER BY FirstName DESC;
+
+8. "An illegal site's servers were seized in a recent operation. Please submit all users number of downloads and first names' details sorted by number of downloads in ascending order and then by first names in ascending order."
+Answer: SELECT NumberOfDownloads, FirstName FROM users ORDER BY NumberOfDownloads, FirstName ASC;
+
+9. "An illegal site's servers were seized in a recent operation. Please submit the top 3 users' details when sorted by number of downloads in descending order and then by emails in ascending order."
+Answer: SELECT * FROM users ORDER BY Downloads DESC, Email ASC LIMIT 3;
+
+10. "An illegal site's servers were seized in a recent operation. Please submit the top 5 users access times, number of doqnloads and email addresses' details when sorted by number of downloads in ascending order and then by email addresses in descending order. Please make sure there are no duplicates."
+Answer: SELECT DISTINCT AccessTime, Downloads, EmailAddress FROM users ORDER BY Downloads ASC, EmailAddress DESC LIMIT 5;
+
+
